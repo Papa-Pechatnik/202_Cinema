@@ -1,0 +1,13 @@
+/* Heebo-400 */
+@font-face {
+  font-family: 'Heebo';
+  src: url('../Fonts/heebo/Heebo-Regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../Fonts/heebo/Heebo-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../Fonts/heebo/Heebo-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../Fonts/heebo/Heebo-Regular.woff') format('woff'), /* Modern Browsers */
+       url('../Fonts/heebo/Heebo-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../Fonts/heebo/Heebo-Regular.svg#Roboto') format('svg'); /* Legacy iOS */
+       font-style: normal;
+       font-weight: 400;
+     }

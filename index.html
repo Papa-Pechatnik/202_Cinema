@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HHHHHHHHHHHHHHHHHHHHH</title>
+
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/fonts.css" />
+    <link rel="stylesheet" href="./CSS/styles.css " />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <section class="header">
+        <div class="container">
+          <nav class="nav">
+            <section class="logo">
+              <img src="./img/logo.svg" alt="logo Cinemania" />
+              <p>Cinemania</p>
+            </section>
+            <ul class="menu">
+              <li>
+                <a class="menu-link link-active" href="">Home</a>
+              </li>
+              <li>
+                <a class="menu-link" href="">CATALOG</a>
+              </li>
+              <li>
+                <a class="menu-link" href="">my library</a>
+              </li>
+            </ul>
+            <section class="switch-theme"></section>
+          </nav>
+        </div>
+      </section>
+      <section class="main-screen">
+        <div class="container">
+          <h1>Ghosted</h1>
+          <p class="score-film">* * * * *</p>
+          <!-- рейтинг -->
+          <p class="description" aria-label="short description">
+            Salt-of-the-earth Cole falls head over heels for enigmatic Sadie — but then makes the shocking discovery
+            that she’s a secret agent.
+          </p>
+          <!--Добавить постер з фильмом или фоном или картинкой-->
+          <div class="button-group">
+            <button class="btn">Watch trailer</button>
+            <!--Грузит трейлер-->
+            <button class="btn">More details</button>
+            <!--Поп-Ап -->
+          </div>
+        </div>
+      </section>
+    </header>
+
+
+    <!-- MAIN -->
+    <main class="container">
+      <section class="top-films">
+        <header>
+          <h2>WEEKLY TRENDS</h2>
+          <a class="top-films__link-all" href="#">See all</a>
+        </header>
+        <ul class="cards-films">
+          <li class="card-film card-poster1">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" 
+            width="25" height="25" viewBox="0 0 1280 1189"
+            class="card-favorites"><!-- избранное -->
+            <path d="M325 .6c-2.5.2-10.6 1.1-18 2C158.5 19.8 36.6 132.1 6.9 279-6.4 345 .2 429.7 24 501.3c25.2 75.3 67.5 141.1 139.7 217.2 34.2 36 63.4 63 158.8 147 23.1 20.3 48.8 43 57 50.5 102.4 92 173.5 169.2 234.6 254.7l13 18.3h13.2l13.2-.1 13-19.2c55.7-82.2 121.2-156 218.5-246.1 19.1-17.8 40.8-37.3 102.7-92.3 95.6-85.2 144.5-134.3 184.1-185 64.3-82.5 96.8-160.3 106.4-255.3 1.9-19.6 1.7-66.5-.5-83.5-10.5-80.5-44.1-149.7-99.8-205.4s-125-89.4-205.4-99.8c-19.3-2.4-61.3-2.4-81 0-73.3 9.3-137.9 38.7-192 87.4-19.1 17.2-40.6 41.7-53.5 61-3 4.5-5.7 8.2-6 8.2s-3-3.7-6-8.2c-12.9-19.3-34.4-43.8-53.5-61-53.1-47.8-117-77.3-187.8-86.7C378.1 1 336.5-.4 325 .6"/></svg>
+            <article class="film-info">
+              <section class="info-shot">
+                <h3 class="titel">GHOSTED</h3>
+                <ul class="film-genre">
+                  <li class="genre1">Drama<span class="comma">,&#160;</span></li> <!--Если есть продолжение ставим запятую если нет, то не ставим -->
+                  <li class="genre2">Action</li>
+                  <li class="film-year"><span>&#160; &#124; &#160;</span>2023</li> <!-- Добавлены прбелы &#160; вертикальная линия &#124;-->
+                </ul>
+              </section>
+              <ul class="film-score"><!-- рейтинг / разрисовываем звездочки от рейтинга-->
+                <li class="star star100"></li>
+                <li class="star star100"></li>
+                <li class="star star100"></li>
+                <li class="star star100"></li>
+                <li class="star star50"></li>
+              </ul>
+            </article>
+          </li>
+          <li class="card-film card-poster2">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" 
+            width="25" height="25" viewBox="0 0 1280 1189"
+            class="card-favorites"><!-- избранное -->
+            <path d="M325 .6c-2.5.2-10.6 1.1-18 2C158.5 19.8 36.6 132.1 6.9 279-6.4 345 .2 429.7 24 501.3c25.2 75.3 67.5 141.1 139.7 217.2 34.2 36 63.4 63 158.8 147 23.1 20.3 48.8 43 57 50.5 102.4 92 173.5 169.2 234.6 254.7l13 18.3h13.2l13.2-.1 13-19.2c55.7-82.2 121.2-156 218.5-246.1 19.1-17.8 40.8-37.3 102.7-92.3 95.6-85.2 144.5-134.3 184.1-185 64.3-82.5 96.8-160.3 106.4-255.3 1.9-19.6 1.7-66.5-.5-83.5-10.5-80.5-44.1-149.7-99.8-205.4s-125-89.4-205.4-99.8c-19.3-2.4-61.3-2.4-81 0-73.3 9.3-137.9 38.7-192 87.4-19.1 17.2-40.6 41.7-53.5 61-3 4.5-5.7 8.2-6 8.2s-3-3.7-6-8.2c-12.9-19.3-34.4-43.8-53.5-61-53.1-47.8-117-77.3-187.8-86.7C378.1 1 336.5-.4 325 .6"/></svg>
+            <article class="film-info">
+              <section class="info-shot">
+                <h3 class="titel">QUANTUMANIA</h3>
+                <ul class="film-genre">
+                  <li  class="genre1">Drama<span class="comma">,&#160;</span></li> <!--Если есть продолжение ставим запятую если нет, то не ставим -->
+                  <li class="genre2">Action</li>
+                  <li class="film-year"><span>&#160; &#124; &#160;</span>2023</li> <!-- Добавлены прбелы &#160; вертикальная линия &#124;-->
+                </ul>
+              </section>
+              <ul class="film-score"><!-- рейтинг / разрисовываем звездочки от рейтинга-->
+                <li class="star star100"></li>
+                <li class="star star100"></li>
+                <li class="star star100"></li>
+                <li class="star star100"></li>
+                <li class="star star50"></li>
+              </ul>
+            </article>
+          </li>
+          <li class="card-film card-poster3">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" 
+            width="25" height="25" viewBox="0 0 1280 1189"
+            class="card-favorites"><!-- избранное -->
+            <path d="M325 .6c-2.5.2-10.6 1.1-18 2C158.5 19.8 36.6 132.1 6.9 279-6.4 345 .2 429.7 24 501.3c25.2 75.3 67.5 141.1 139.7 217.2 34.2 36 63.4 63 158.8 147 23.1 20.3 48.8 43 57 50.5 102.4 92 173.5 169.2 234.6 254.7l13 18.3h13.2l13.2-.1 13-19.2c55.7-82.2 121.2-156 218.5-246.1 19.1-17.8 40.8-37.3 102.7-92.3 95.6-85.2 144.5-134.3 184.1-185 64.3-82.5 96.8-160.3 106.4-255.3 1.9-19.6 1.7-66.5-.5-83.5-10.5-80.5-44.1-149.7-99.8-205.4s-125-89.4-205.4-99.8c-19.3-2.4-61.3-2.4-81 0-73.3 9.3-137.9 38.7-192 87.4-19.1 17.2-40.6 41.7-53.5 61-3 4.5-5.7 8.2-6 8.2s-3-3.7-6-8.2c-12.9-19.3-34.4-43.8-53.5-61-53.1-47.8-117-77.3-187.8-86.7C378.1 1 336.5-.4 325 .6"/></svg>
+            <article class="film-info">
+              <section class="info-shot">
+                <h3 class="titel">EVIL DEAD RISE</h3>
+                <ul class="film-genre">
+                  <!--Если есть продолжение ставим запятую если нет, то не ставим -->
+                  <li class="genre1">Drama<span class="comma">,&#160;</span></li> 
+                  <li class="genre2">Comedy </li>
+                  <li class="film-year"><span>&#160; &#124; &#160;</span>2023</li> <!-- Добавлены прбелы &#160; вертикальная линия &#124;-->
+                </ul>
+              </section>
+              <ul class="film-score"><!-- рейтинг / разрисовываем звездочки от рейтинга-->
+                <li class="star star100"></li>
+                <li class="star star100"></li>
+                <li class="star star100"></li>
+                <li class="star star100"></li>
+                <li class="star star50"></li>
+              </ul>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section class="film-quickly">
+        <h2>upcoming this month</h2>
+        <div class="quickly-box">
+          <section class="quickly-poster">
+            <img src="./img/logo.svg" alt="название фильма" />
+          </section>
+          <section class="quickly-info">
+            <h3>имя фильма</h3>
+            <main>
+              <section></section>
+            <p>About</p>
+            <p>
+              <!-- Ограничение 8 строк-->
+              Reclusive author Loretta Sage writes about exotic places in her popular adventure novels that feature a
+              handsome cover model named Alan. While on tour promoting her new book with Alan, Loretta gets kidnapped by
+              an eccentric billionaire who hopes she can lead him to an ancient city's lost treasure from her latest
+              story. Determined to prove he can be a hero in real life and not just on the pages of her books, Alan sets
+              off to rescue her.
+            </p>              
+            </main>
+
+            <button>Add to my library</button>
+          </section>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p> &#169; 2024 &#10072; Created by Full stack developer Yurij
+        <span>&#9829;</span>
+        <a href="http://">GitHub</a>
+      </p>
+    </footer>
+  </body>
+</html>
