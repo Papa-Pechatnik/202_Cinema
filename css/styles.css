@@ -58,9 +58,15 @@ END Contents --- */
   transition: width 0.5s;
 }
 
-.quickly-box, .cards-films {
+.cards-films {
   display: grid;
-  grid-template-columns: repeat(3, minmax(224px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 16px;
+}
+
+.quickly-box {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
   column-gap: 16px;
 }
 
@@ -82,7 +88,7 @@ a {
   text-decoration: none;
 }
 
-h2, h3 {
+h2, h3, h4 {
   font-family: var(--font-Roboto);
   font-weight: 500;
   text-transform: uppercase;
@@ -92,6 +98,13 @@ h2, h3 {
 h2 {
   font-size: clamp(1rem, 0.75rem + 1.25vw, 1.75rem);
   line-height: 1.1875;
+}
+
+h4 {
+  font-size: clamp(1.25rem, 1rem + 1.25vw, 2rem);
+  line-height: 1.1875;
+  text-align: left;
+  text-wrap: balance;
 }
 
 /* 2.2 Basic class */
@@ -256,8 +269,9 @@ header {
 }
 
 .film-info {
+  position: relative;
   box-sizing: border-box;
-  align-items: flex-end;
+  align-items: flex-start;
   color: var(--color-grey, #b7b7b7);
   font-size: clamp(0.75rem, 1.563vw - 0.00024rem, 1.25rem);
   line-height: 1.15;
@@ -277,6 +291,8 @@ header {
 }
 
 .film-score {
+  position: absolute;
+  right: 12px;
   display: flex;
   column-gap: 4px;
 }
@@ -307,28 +323,109 @@ header {
 /* upcoming this month*/
 .film-quickly {
   width: 100%;
-  margin-top: 60px;
+  margin-top: clamp(2rem, 1.4166rem + 2.917vw, 3.75rem);
 }
 
 .quickly-box {
+  box-sizing: border-box;
   height: 458px;
-  margin: 28px 0;
+  margin: clamp(1.5rem, 1.12512rem + 0.781vw, 1.75rem) 0;
   border: 2px solid red;
-}
-.quickly-box :nth-child(1n) {
-  background: rgb(132, 38, 38);
 }
 
 .quickly-poster {
-  grid-column: 1/span 2;
+  grid-column: 1/span 8;
   border: 2px solid rgb(0, 94, 255);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 63.48%, rgba(0, 0, 0, 0.9) 92.161%), url(../img/Posters/Quickly/quickly-poster1.png);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
 .quickly-info {
-  color: black;
+  grid-column: 9/span 4;
+  font-family: var(--font-Roboto);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.1875;
+  color: var(--color-white);
   border: 2px solid rgb(0, 255, 17);
 }
+.quickly-info h4 {
+  margin-bottom: clamp(1.25rem, 1.0834rem + 0.833vw, 1.75rem);
+}
 
+.quickly-rating {
+  display: grid;
+  grid-template-columns: max-content auto;
+  grid-template-rows: 4;
+  gap: 12px 16px;
+  align-items: center;
+}
+.quickly-rating .titel {
+  color: var(--color-grey);
+  text-transform: capitalize;
+}
+.quickly-rating .datetime {
+  color: rgb(248, 119, 25);
+}
+.quickly-rating .quickly-vote {
+  font-size: 0.875rem;
+}
+.quickly-rating .quickly-vote :nth-child(odd) {
+  border-radius: 5px;
+  background: var(--color-white);
+}
+.quickly-rating .quickly-vote :nth-child(even) {
+  color: var(--color-white);
+}
+.quickly-rating .genre-items {
+  display: flex;
+  overflow-x: hidden;
+}
+.quickly-rating .genre-items:nth-child(1) {
+  text-transform: capitalize;
+}
+
+.quickly-vote {
+  display: flex;
+  column-gap: 0.25rem;
+  color: var(--background-black, #99A2AA);
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.quickly-vote .vote {
+  padding: 2px 8px;
+}
+.quickly-vote .votes {
+  padding: 2px 8px;
+}
+
+.quickly-about .description {
+  color: var(--color-white);
+  font-family: var(--font-Roboto);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.42;
+  text-align: left;
+  text-wrap: balance;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 991.98px) {
+  .quickly-poster {
+    grid-column: 1/span 7;
+  }
+  .quickly-info {
+    grid-column: 7/span 5;
+  }
+}
 @media screen and (max-width: 767.98px) {
   .cards-films {
     grid-template-columns: repeat(2, minmax(224px, 1fr));
